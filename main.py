@@ -1,6 +1,5 @@
-from translation_module_setup import get_translation
-print("hello")
-text = "আপনার বাংলা টেক্সট"
-translated_text = get_translation(text)
-if translated_text:
-    print(translated_text)
+from translation_module_setup import get_local_translation
+# Create a .env file with your configurations
+text = "আমার সোনার বাংলা"
+translated_text = get_local_translation(text)
+print(translated_text)
